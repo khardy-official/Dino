@@ -1,0 +1,82 @@
+.game {
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid #000;
+    margin: auto;
+}
+
+#dino {
+    width: 50px;
+    height: 50px;
+    background-image: url(img/dino.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+}
+
+#cactus {
+    width: 20px; 
+    height: 40px;
+    background-image: url(img/cactus.png);
+    background-size: 20px 40px;
+    position: relative;
+    top: 110px;
+    left: 580px;
+    animation: cactusMove 2.4s infinite linear;
+}
+#cactus_big {
+    width: 25px; 
+    height: 50px;
+    background-image: url(img/cactus.png);
+    background-size: 25px 50px;
+    position: relative;
+    top: 60px;
+    left: 580px;
+    animation: cactusMove 3.2s infinite linear;
+}
+
+@keyframes cactusMove {
+    0% {
+        left: 580px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+
+.jump {
+    animation: jump 0.5s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+    25% {
+        top: 115px;  
+    }
+    50% {
+        top: 80px;
+    }
+    75% {
+        top: 115px;
+    }
+    100% {
+        top: 150px;
+    }
+}
+
+.score {
+    width: 100px;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 700;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkslategray;
+    border: 1px solid darkslategray;
+    position: relative;
+    top: -100px;
+}
