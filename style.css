@@ -22,7 +22,7 @@
     position: relative;
     top: 110px;
     left: 580px;
-    animation: cactusMove 2.4s infinite linear;
+    /* animation: cactusMove 2.4s infinite linear; */
 }
 #cactus_big {
     width: 25px; 
@@ -32,7 +32,14 @@
     position: relative;
     top: 60px;
     left: 580px;
-    animation: cactusMove 3.2s infinite linear;
+    /* animation: cactusMove 3.2s infinite linear; */
+}
+
+ #button {
+    display: block;
+    margin: 30px auto 0;
+    padding: 10px;
+    text-transform: uppercase;
 }
 
 @keyframes cactusMove {

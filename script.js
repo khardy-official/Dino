@@ -2,20 +2,32 @@ const dino = document.querySelector('#dino');
 const cactus = document.querySelector('#cactus');
 const cactusBig = document.querySelector('#cactus_big');
 const score = document.querySelector('.score');
+const button = document.querySelector('button');
+
+let a = 1;
+
+button.addEventListener('click', () => {
+    
+
+    cactus.style.animation = "cactusMove 2.4s infinite linear";
+    cactusBig.style.animation = "cactusMove 3.2s infinite linear";
+
+    setInterval(() => {
+        score.textContent = a++;
+    }, 2400);
+    
+    setInterval(() => {
+        score.textContent = a++;
+    }, 3200);
+})
 
 document.addEventListener('keydown', () => {
     jump();
 });
 
-let a = 1;
 
-setInterval(() => {
-    score.textContent = a++;
-}, 2400);
 
-setInterval(() => {
-    score.textContent = a++;
-}, 3200);
+
 
 function jump() {
 
